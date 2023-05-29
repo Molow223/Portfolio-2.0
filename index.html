@@ -1,56 +1,125 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <link rel = "preconnect" href = "https://fonts.googleapis.com">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
-    <title>Портфолио Junior верстальщика</title>
-  </head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="shortcut icon" href="./logo_panda.png" type="image/x-icon">
+    <title>Resume</title>
+</head>
 
-  <body>
-    <header class="page-header">
-      <div class="container">
-        e-mail: Molow223@gmail.com
-      </div>
-    </header>
+<body id="body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <h3>Maksim Kataev</h3>
+                    <h5>Frontend Developer</h5>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div> 
+                <nav class="header__menu">
+                    <a href="#aboutMe">Обо мне</a>
+                    <a href="#work">Мои навыки</a>
+                    <a href="#contacts">Контакты</a>
+                </nav>
+            </div>
+        </header>
 
-    <section class="hero-image">
-      <div class="container">
-        <h1 class="heading">Беззаботная панда</h1>
-        <p>Junior верстальщик</p>  
-      </div>
-    </section>
+        <section id="aboutMe">
+            <div class="title">
+                <h1> Hello, world!</h1>
+                <p>Любые действия, имеют последствия!</p>
+            </div>
+        </section>
 
-    <section class="intro">
-      <div class="container">
-        <h2 class="subheading">Давайте познакомимся</h2>
-        <h3>Пара слов о себе</h3>
-        <p>Зовут меня Максим, мне за 30 лет! Изучаю программирование, начал самомтоятельно, но понял что нужен наставник. Тогда записался на курсы по веб-разработке, освоил Html, Css и Js, а также научился работать с Git и пользоваться сборщиками проектов. Следующим шагом было изучение основ веб-дизайна и работы с Figma и Photoshop. Научился создавать макеты для последующей верстки. На изучение этого у меня ушел весь 2020 год. После этого устроился преподавателем в Академию дизайна и программирования. И там я столкнулся с новыми вызовами со стороны программирования - это низкоуровневые языки. Такие как С++ и Phyton, а так же программа для 3d моделирования - Blender. В мае 2021 года закончился учебный год и я решил устроиться работать и совершенствовать свои навыки разработки и создания веб-интерфейсов, попутно изучая серверный язык php и язык запросов к базам данных sql.</p>
-        <h3>Чем могу быть полезен</h3>
-        <p>Текст о том, чем могу быть полезен.</p>  
-      </div>
-    </section>
+        <section id="work">
+            <div class="work__block">
+                <div class="frontend">
+                    <div class="column">
+                        <span>95%</span>
+                    </div>
+                    <span class="name">Html</span>
+                </div>
+                <div class="frontend">
+                    <div class="column">
+                        <span>85%</span>
+                    </div>
+                    <span class="name">Css</span>
+                </div>
+                <div class="frontend">
+                    <div class="column">
+                        <span>70%</span>
+                    </div>
+                    <span class="name">Js</span>
+                </div>
+                <div class="frontend">
+                    <div class="column">
+                        <span>80%</span>
+                    </div>
+                    <span class="name">Figma</span>
+                </div>
+                <div class="frontend">
+                    <div class="column">
+                        <span>90%</span>
+                    </div>
+                    <span class="name">Ps</span>
+                </div>
+                <div class="frontend">
+                    <div class="column">
+                        <span>80%</span>
+                    </div>
+                    <span class="name">C++</span>
+                </div>
+                <div class="frontend">
+                    <div class="column">
+                        <span>30%</span>
+                    </div>
+                    <span class="name">Phyton</span>
+                </div>
+                <div class="frontend">
+                    <div class="column">
+                        <span>30%</span>
+                    </div>
+                    <span class="name">Java</span>
+                </div>
+            </div>
+            <button id="btn" onclick="changeColor();">Изменить фон</button>
+            <div>
+                
+            </div>
+            <div class="work__block wrap">
+                <a><img src="./Skill/HTML.jpg" alt=""></a>
+                <a><img src="./Skill/Css.jpg" alt=""></a>
+                <a><img src="./Skill/Js.jpg" alt=""></a>
+                <a><img src="./Skill/Responsive Web Design.jpg" alt=""></a>
+                <a><img src="./Skill/Js.jpg" alt=""></a>
+                <a><img src="./Skill/Sql.jpg" alt=""></a>
+                <a href="https://www.sololearn.com/certificates/course/en/3596956/1051/landscape/png"><img src="./img/Skill/C++.jpg" alt=""></a>
+                <a><img src="./Skill/Java.jpg" alt=""></a>
+            </div>
+        </section>
+        <section id="contacts">
+            <div class="contacts__menu">
+                <a href="https://vk.com/mkataev89">ВКонтакте</a>
+                <a href="http://o90911dr.beget.tech/">Пример работы по верстке</a>
+                <a href="#">+7-909-111-89-42</a>
+            </div>
+        </section>
 
-    <section class="portfolio">
-      <div class="container">
-        <h2 class="subheading">Мои работы</h2>
+        <footer id="footer">
+            <div class="footer__menu">
+                <a href="#aboutMe">Обо мне</a>
+                <a href="#work">Мои навыки</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </footer>
+    </div>
+    <script src="./js.js"></script>
+</body>
 
-        <h3>Магазин товаров для дома</h3>
-        <p>Мой первый сайт.</p>
-  
-        <h3>Блог начинающего верстальщика</h3>
-        <p>Статический блог про обучение HTML и CSS.</p>
-  
-      </div>
-    </section>
-
-    <footer class="page-footer">
-      <div class="container">
-        Контакты в подвале
-      </div>
-    </footer>
-  </body>
 </html>
