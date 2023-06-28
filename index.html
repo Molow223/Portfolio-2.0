@@ -14,20 +14,22 @@
 <body id="body">
     <div class="wrapper">
         <header class="header">
-            <div class="header__container">
-                <div class="header__logo">
-                    <h3>Maksim Kataev</h3>
-                    <h5>Frontend Developer</h5>
-                </div>
-                <div class="header__burger">
-                    <span></span>
-                </div> 
-                <nav class="header__menu">
-                    <a href="#aboutMe">Обо мне</a>
-                    <a href="#work">Мои навыки</a>
-                    <a href="#contacts">Контакты</a>
-                </nav>
+
+            <div class="header__logo">
+                <h3>Maksim Kataev</h3>
+                <h5>Frontend Developer</h5>
             </div>
+
+            <div class="header__burger">
+                <span></span>
+            </div>
+
+            <nav class="header__menu">
+                <a href="#aboutMe">Обо мне</a>
+                <a href="#work">Мои навыки</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+
         </header>
 
         <section id="aboutMe">
@@ -38,77 +40,96 @@
         </section>
 
         <section id="work">
-            <div class="work__block">
-                <div class="frontend">
-                    <div class="column">
-                        <span>95%</span>
+
+            <div class="skills">
+                <div class="cont">
+                    <div class="skill">
+                        <span class="skill_p">100%</span>
                     </div>
                     <span class="name">Html</span>
                 </div>
-                <div class="frontend">
-                    <div class="column">
-                        <span>85%</span>
+                <div class="cont">
+                    <div class="skill">
+                        <span class="skill_p">100%</span>
                     </div>
                     <span class="name">Css</span>
                 </div>
-                <div class="frontend">
-                    <div class="column">
-                        <span>70%</span>
+                <div class="cont">
+                    <div class="skill">
+                        <span class="skill_p">70%</span>
                     </div>
                     <span class="name">Js</span>
                 </div>
-                <div class="frontend">
-                    <div class="column">
-                        <span>80%</span>
+                <div class="cont">
+                    <div class="skill">
+                        <span class="skill_p">90%</span>
                     </div>
                     <span class="name">Figma</span>
                 </div>
-                <div class="frontend">
-                    <div class="column">
-                        <span>90%</span>
+                <div class="cont">
+                    <div class="skill">
+                        <span class="skill_p">90%</span>
                     </div>
                     <span class="name">Ps</span>
                 </div>
-                <div class="frontend">
-                    <div class="column">
-                        <span>80%</span>
+                <div class="cont">
+                    <div class="skill">
+                        <span class="skill_p">70%</span>
                     </div>
                     <span class="name">C++</span>
                 </div>
-                <div class="frontend">
-                    <div class="column">
-                        <span>30%</span>
+                <div class="cont">
+                    <div class="skill">
+                        <span class="skill_p">30%</span>
                     </div>
                     <span class="name">Phyton</span>
                 </div>
-                <div class="frontend">
-                    <div class="column">
-                        <span>30%</span>
+                <div class="cont">
+                    <div class="skill">
+                        <span class="skill_p">30%</span>
                     </div>
                     <span class="name">Java</span>
                 </div>
             </div>
+
+            <div class="slides">
+                <button id="btn" class="btnLeft" onclick="btnLeft">Left</button>
+                <img src="./HTML.jpg" class="block" alt="">
+                <img src="./Css.jpg" alt="">
+                <img src="./Js.jpg" alt="">
+                <img src="./Responsive Web Design.jpg" alt="">
+                <img src="./Sql.jpg" alt="">
+                <img src="./C++.jpg" alt="">
+                <img src="./Java.jpg" alt="">
+                <button id="btn" class="btnRight" onclick="btnRight">Right</button>
+
+            </div>
+
             <button id="btn" onclick="changeColor();">Изменить фон</button>
-            <div>
-                
-            </div>
-            <div class="work__block wrap">
-                <a><img src="./Skill/HTML.jpg" alt=""></a>
-                <a><img src="./Skill/Css.jpg" alt=""></a>
-                <a><img src="./Skill/Js.jpg" alt=""></a>
-                <a><img src="./Skill/Responsive Web Design.jpg" alt=""></a>
-                <a><img src="./Skill/Js.jpg" alt=""></a>
-                <a><img src="./Skill/Sql.jpg" alt=""></a>
-                <a href="https://www.sololearn.com/certificates/course/en/3596956/1051/landscape/png"><img src="./img/Skill/C++.jpg" alt=""></a>
-                <a><img src="./Skill/Java.jpg" alt=""></a>
-            </div>
+
         </section>
+
         <section id="contacts">
             <div class="contacts__menu">
                 <a href="https://vk.com/mkataev89">ВКонтакте</a>
-                <a href="http://o90911dr.beget.tech/">Пример работы по верстке</a>
                 <a href="#">+7-909-111-89-42</a>
             </div>
+        </section>
+
+        <section id="to_do">
+            <div class="to_do__header">
+                <h2>My To Do List</h2>
+                <input type="text" id="input" placeholder="Title...">
+                <button onclick="newElement()" class="addBtn">Add</button>
+            </div>
+            <ul class="to_do__ul" id="to_do__ul">
+                <li>Hit the gym</li>
+                <li class="checked">Pay bills</li>
+                <li>Meet George</li>
+                <li>Buy eggs</li>
+                <li>Read a book</li>
+                <li>Organize office</li>
+            </ul>
         </section>
 
         <footer id="footer">
