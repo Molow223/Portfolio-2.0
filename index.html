@@ -62,6 +62,12 @@
                 </div>
                 <div class="cont">
                     <div class="skill">
+                        <span class="skill_p">70%</span>
+                    </div>
+                    <span class="name">React</span>
+                </div>
+                <div class="cont">
+                    <div class="skill">
                         <span class="skill_p">90%</span>
                     </div>
                     <span class="name">Figma</span>
@@ -74,7 +80,7 @@
                 </div>
                 <div class="cont">
                     <div class="skill">
-                        <span class="skill_p">70%</span>
+                        <span class="skill_p">30%</span>
                     </div>
                     <span class="name">C++</span>
                 </div>
@@ -93,44 +99,66 @@
             </div>
 
             <div class="slides">
-                <button id="btn" class="btnLeft" onclick="btnLeft">Left</button>
-                <img src="./HTML.jpg" class="block" alt="">
+                <img src="./Diplom.jpg" class="block">
+                <img src="./HTML.jpg"  alt="">
                 <img src="./Css.jpg" alt="">
                 <img src="./Js.jpg" alt="">
                 <img src="./Responsive Web Design.jpg" alt="">
                 <img src="./Sql.jpg" alt="">
                 <img src="./C++.jpg" alt="">
                 <img src="./Java.jpg" alt="">
-                <button id="btn" class="btnRight" onclick="btnRight">Right</button>
+                <div class="slides__nav">
+                    <button id="btn" class="btnLeft" onclick="btnLeft">Left</button>
+                    <button id="btn" class="btnRight" onclick="btnRight">Right</button>
+                </div>
+                <button id="btn" onclick="changeColor();">Изменить фон</button>
 
             </div>
 
-            <button id="btn" onclick="changeColor();">Изменить фон</button>
 
         </section>
 
         <section id="contacts">
             <div class="contacts__menu">
                 <a href="https://vk.com/mkataev89">ВКонтакте</a>
+                <a href="https://gitlab.com/Molow223">gitLab</a>
+                <a href="https://github.com/Molow223">gitHub</a>
                 <a href="#">+7-909-111-89-42</a>
-            </div>
-        </section>
 
-        <section id="to_do">
-            <div class="to_do__header">
-                <h2>My To Do List</h2>
-                <input type="text" id="input" placeholder="Title...">
-                <button onclick="newElement()" class="addBtn">Add</button>
             </div>
-            <ul class="to_do__ul" id="to_do__ul">
-                <li>Hit the gym</li>
-                <li class="checked">Pay bills</li>
-                <li>Meet George</li>
-                <li>Buy eggs</li>
-                <li>Read a book</li>
-                <li>Organize office</li>
-            </ul>
         </section>
+        <div id="wrap">
+            <section id="to_do">
+                <div class="to_do__header">
+                    <h2>My To Do List</h2>
+                    <input type="text" id="input" placeholder="Title...">
+                    <button onclick="newElement()" class="addBtn">Add</button>
+                </div>
+                <ul class="to_do__ul" id="to_do__ul">
+
+                </ul>
+            </section>
+
+            <section id="calendar">
+                <table id="calendar2">
+                    <thead>
+                        <tr>
+                            <td>‹
+                            <td colspan="5">
+                            <td>›
+                        <tr>
+                            <td>Пн
+                            <td>Вт
+                            <td>Ср
+                            <td>Чт
+                            <td>Пт
+                            <td>Сб
+                            <td>Вс
+                    <tbody>
+                </table>
+            </section>
+        </div>
+
 
         <footer id="footer">
             <div class="footer__menu">
