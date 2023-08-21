@@ -43,8 +43,8 @@ btnRight.addEventListener("click", function () {
 })
 btnLeft.addEventListener("click", function () {
     // Уменьшаем переменную i
-    i--
-    // Условие если переменная i больше или равна количеству слайдов
+    --i
+  // Условие если переменная i больше или равна количеству слайдов
     if (i >= slides.length) {
         // Удаляем класс block следующему слайду
         slides[i + 1].classList.remove("block");
@@ -157,4 +157,4 @@ function Calendar2(id, year, month) {
   // переключатель плюс месяц
   document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
     Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
-  }
+  } 
